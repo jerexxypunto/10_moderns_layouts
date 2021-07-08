@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: serif;
+}
+
+.exp1 {
+  background-color: lightblue;
+  height: 100vh;
+  font-size: 4rem;
+}
+.exp1 * {
+  height: 100%;
+}
+.exp1 .padre {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}

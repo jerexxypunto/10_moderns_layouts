@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+@mixin fondo {
+    background-color: lightblue;
+    height:100vh;
+    font-size: 4rem;
+    *{
+        height: 100%;
+    }
+}
+
+.exp1{
+    @include fondo();
+        .padre{
+            display: grid;
+            place-items: center;
+        }
+    }
