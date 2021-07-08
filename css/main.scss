@@ -68,3 +68,33 @@
    }
 
 }
+.exp5{
+    height: 100vh;
+    .padre{
+        height: 100%;
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+        grid-gap: 5px;
+        font-size: 1.5rem;
+        & > *{
+            font-family: sans-serif;
+            color: #fff;
+            background-color: steelblue;
+            padding: 1rem;
+        }
+        header{
+            grid-column: 1/-1;
+        }
+        footer{
+            grid-column: 1/-1;
+        }
+        aside{
+            &.sliderbar-left{
+                grid-column: 1/2;
+            }
+            &.sliderbar-rigth{
+                grid-column: 3/4;
+            }
+        }
+    }
+}
