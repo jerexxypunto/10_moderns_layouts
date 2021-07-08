@@ -52,3 +52,19 @@
         }
     }
 }
+.exp4{
+   height: 100vh;
+   .padre{
+       height: 100%;
+       display: grid;
+       grid-auto-rows: auto 1fr auto;
+       grid-gap:5px;
+    & > * {
+        background-color:tomato;
+        display: grid;
+        place-items: center;
+        font-size: 2rem;
+    }
+   }
+
+}
