@@ -127,3 +127,21 @@
 
     }
 }
+.exp7{
+    height: 100vh;
+    .padre{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-gap:10px;
+        .box{
+            background-color: yellowgreen;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            border-radius: 10px;
+        }
+    }
+}
