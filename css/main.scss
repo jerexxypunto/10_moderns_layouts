@@ -9,15 +9,29 @@
     background-color: lightblue;
     height:100vh;
     font-size: 4rem;
-    *{
-        height: 100%;
-    }
 }
 
 .exp1{
     @include fondo();
-        .padre{
-            display: grid;
-            place-items: center;
-        }
+    height: 100%;
+    .padre{
+        display: grid;
+        place-items: center;
     }
+}
+.exp2{
+    @include fondo();
+    .padre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .box{
+        background-color: steelblue;
+        flex: 0 1 150px;
+        text-align: center;
+        margin: 5px;
+        line-height: 90vh;
+    }
+}

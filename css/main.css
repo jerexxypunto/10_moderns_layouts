@@ -10,12 +10,36 @@
   background-color: lightblue;
   height: 100vh;
   font-size: 4rem;
-}
-.exp1 * {
   height: 100%;
 }
 .exp1 .padre {
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+.exp2 {
+  background-color: lightblue;
+  height: 100vh;
+  font-size: 4rem;
+}
+.exp2 .padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.exp2 .box {
+  background-color: steelblue;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 150px;
+          flex: 0 1 150px;
+  text-align: center;
+  margin: 5px;
+  line-height: 90vh;
 }
