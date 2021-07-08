@@ -8,12 +8,12 @@
 @mixin fondo {
     background-color: lightblue;
     height:100vh;
-    font-size: 4rem;
 }
 
 .exp1{
     @include fondo();
     height: 100%;
+    font-size: 4rem;
     .padre{
         display: grid;
         place-items: center;
@@ -21,6 +21,7 @@
 }
 .exp2{
     @include fondo();
+    font-size: 4rem;
     .padre{
         display: flex;
         flex-wrap: wrap;
@@ -33,5 +34,21 @@
         text-align: center;
         margin: 5px;
         line-height: 90vh;
+    }
+}
+.exp3{
+    @include fondo();
+    .padre{
+        height: 80%;
+        padding-top:10%;
+        display: grid;
+            grid-template-columns: minmax(150px, 25%) 1fr;
+        div{
+            &:first-child{
+                background-color:darken(tomato,3%);
+            }
+            background-color:tomato;
+            padding: 1rem;
+        }
     }
 }

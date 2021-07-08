@@ -9,8 +9,8 @@
 .exp1 {
   background-color: lightblue;
   height: 100vh;
-  font-size: 4rem;
   height: 100%;
+  font-size: 4rem;
 }
 .exp1 .padre {
   display: -ms-grid;
@@ -42,4 +42,24 @@
   text-align: center;
   margin: 5px;
   line-height: 90vh;
+}
+
+.exp3 {
+  background-color: lightblue;
+  height: 100vh;
+}
+.exp3 .padre {
+  height: 80%;
+  padding-top: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 25%) 1fr;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+.exp3 .padre div {
+  background-color: tomato;
+  padding: 1rem;
+}
+.exp3 .padre div:first-child {
+  background-color: #ff5638;
 }
